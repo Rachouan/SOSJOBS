@@ -34,9 +34,10 @@ body{
 
 footer nav{
     
-    border-top: 2px;
+    border-top: 4px;
     border-top-color: #3f464c;
     border-top-style: solid;
+    background-color: #FFFAF0;
     position: fixed;
     width: 100%;
     text-align: center;
