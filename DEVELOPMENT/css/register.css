@@ -3,11 +3,28 @@ div {
     margin: 20px auto;
 }
 
+h1 {
+    text-align: center;
+    padding: 40px;
+    color: #3e464c;
+}
+
+#camera {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #3e464c;
+}
+
 .fb {
     border: 6px solid;
     border-color: #3e464c;
     background-color: #5980c1;
-    color: #fff9eb;
     border-radius: 10px;
     position: relative;
 }
@@ -16,21 +33,21 @@ div {
     text-align: center;
     font-size: 2em;
     position: absolute;
-    top: 20px;
-    left: 35%;
+    top: 10px;
+    left: 30%;
+    color: #fff9eb;
 }
 
 #fb {
     padding-left: 50px;
-    padding-top: 10px;
-    padding-bottom: 7px;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .google {
     border: 6px solid;
     border-color: #3e464c;
     background-color: #f37c69;
-    color: #fff9eb;
     border-radius: 10px;
     position: relative;
 }
@@ -39,12 +56,28 @@ div {
     text-align: center;
     font-size: 2em;
     position: absolute;
-    top: 20px;
-    left: 35%;
+    top: 10px;
+    left: 30%;
+    color: #fff9eb;
 }
 
 #google {
     padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 7px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.input {
+    border: 6px solid;
+    border-color: #3e464c;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 80%;
+    height: 75px;
+    margin: 20px;
+    font-family: Bariol;
+    font-size: 1.5em;
+    color: #f37c69;
+    text-decoration: none;
+    background-color: #fff9eb;
 }
