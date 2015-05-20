@@ -3,8 +3,14 @@
 BACKGROUND: #FFFAF0
 ROOD: #EE7966
 GROEN: #82BD8B
+ZWART: #3f464c
 
 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
     font-family: "bariol";
@@ -14,11 +20,6 @@ GROEN: #82BD8B
     font-weight: bold;
     src: url(fonts/Bariol_Light.otf);
     font-weight: lighter;
-}
-
-*{
-    margin: 0;
-    padding: 0;
 }
 
 html, body{
@@ -31,3 +32,91 @@ body{
     background-color: #FFFAF0;
 }
 
+footer nav{
+    
+    border-top: 2px;
+    border-top-color: #3f464c;
+    border-top-style: solid;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    height: 75px;
+    top: 100%;
+    margin-top: -75px;
+    
+
+}
+
+footer nav ul{
+    float: left;
+    width: 100%;
+    text-align: center;
+    height: 75px;
+    
+}
+
+footer nav ul li{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    
+}
+
+footer nav ul li a{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-size: 30px auto;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home.selected{
+    background-image: url(imgs/logo.png);
+}
+
+.favorieten.selected{
+    background-image: url(imgs/favorieten.png);
+}
+
+.chat.selected{
+    background-image: url(imgs/chat.png);
+}
+
+.profiel.selected{
+    background-image: url(imgs/profiel.png);
+}
+
+.home{
+    background-image: url(imgs/logo-kleurloos.png);
+}
+
+.favorieten{
+    background-image: url(imgs/favorieten-kleurloos-beter.png);
+}
+
+.chat{
+    background-image: url(imgs/chat-kleurloos.png);
+}
+
+.profiel{
+    background-image: url(imgs/profiel-kleurloos.png);
+}
+
+@media only screen and (max-width: 330px){
+    footer nav ul li{
+        width: 50px;
+        height: 50px;
+    } 
+    
+    footer nav ul{
+        height: 50px;
+    }
+    
+    footer nav{
+        height: 50px;
+        margin-top: -50px;
+    }
+}
