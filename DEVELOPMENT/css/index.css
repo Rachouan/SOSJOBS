@@ -1,5 +1,9 @@
 #first{
-    margin-top: 100px;
+    margin-top: 150px;
+}
+
+#last{
+    margin-bottom: 100px;
 }
 
 #bottomnav{
@@ -25,7 +29,7 @@
 
 #headernav{
     margin: 0px;
-    margin-top: 30px;
+    margin-top: 0px;
     font-size: 0.7em;
     border-bottom: 2px solid #44474D;
 }
@@ -36,7 +40,7 @@ header{
     width: 100%;
     background-color: #FFFAF0;
     z-index: 1;
-    margin-top: -100px;
+    margin-top: -150px;
     
 }
 
@@ -86,7 +90,7 @@ header{
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 10px 10px 0 0;
-    border: 3px solid #44474D;
+    border: 2px solid #44474D;
     margin-top: 30px;
     position: relative;
 }
@@ -109,7 +113,7 @@ header{
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 0 0 10px 10px;
-    border: 3px solid #44474D;
+    border: 2px solid #44474D;
     border-top: 0;
 }
 
@@ -119,7 +123,7 @@ header{
     margin-right: 5%;
     margin-top: 30px;
     border-radius: 10px;
-    border: 3px solid #44474D;
+    border: 2px solid #44474D;
     color: #EE7966;
     text-align: center;
 }
@@ -129,9 +133,17 @@ header{
 }
 
 .icon{
-    width: 30px;
-    margin-top: 10px;
     
+    margin-top: 10px;
+    height: 25px;
+}
+
+.apply{
+    text-decoration: none;
+    color: #44474D;
+    font-size: 0.7em;
+    display: inline block;
+    text-align: center;
 }
 
 .foto{
@@ -175,8 +187,39 @@ header{
     color: white;
     font-size: 0.8em;
     text-indent: 20px;
-    background-image: url(http://www.poppyscupcakes.com/widget/image/placeholder.png);
-    background-size: 15px;
+    background-image: url(../pics/location.svg);
     background-repeat: no-repeat;
-    
+    background-size: contain;
+}
+
+.headercontainer{
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.headercontainer img{
+    height: 30px;
+    padding: 20px;
+}
+
+.headercontainer:after{
+    content: '';
+    width: 80%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+#logo {
+    height: 50px;
+}
+
+.pijltje{
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
 }
