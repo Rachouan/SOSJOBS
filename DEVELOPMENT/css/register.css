@@ -22,7 +22,7 @@ p {
 }
 
 .fb {
-    border: 6px solid;
+    border: 4px solid;
     border-color: #3e464c;
     background-color: #5980c1;
     border-radius: 10px;
@@ -31,21 +31,21 @@ p {
 
 .fb p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     position: absolute;
-    top: 10px;
-    left: 30%;
+    top: 15px;
+    left: 25%;
     color: #fff9eb;
 }
 
 #fb {
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 15px;
 }
 
 .google {
-    border: 6px solid;
+    border: 4px solid;
     border-color: #3e464c;
     background-color: #f37c69;
     border-radius: 10px;
@@ -54,21 +54,21 @@ p {
 
 .google p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     position: absolute;
-    top: 10px;
-    left: 30%;
+    top: 15px;
+    left: 25%;
     color: #fff9eb;
 }
 
 #google {
-    padding-left: 40px;
+    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 15px;
 }
 
 .input {
-    border: 6px solid;
+    border: 4px solid;
     border-color: #3e464c;
     border-radius: 10px;
     padding-left: 10px;
@@ -80,4 +80,8 @@ p {
     color: #f37c69;
     text-decoration: none;
     background-color: #fff9eb;
+}
+
+#uitleg {
+    height: 300px;
 }
