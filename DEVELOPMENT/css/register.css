@@ -1,0 +1,50 @@
+div {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.fb {
+    border: 6px solid;
+    border-color: #3e464c;
+    background-color: #5980c1;
+    color: #fff9eb;
+    border-radius: 10px;
+    position: relative;
+}
+
+.fb p {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    left: 35%;
+}
+
+#fb {
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.google {
+    border: 6px solid;
+    border-color: #3e464c;
+    background-color: #f37c69;
+    color: #fff9eb;
+    border-radius: 10px;
+    position: relative;
+}
+
+.google p {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    left: 35%;
+}
+
+#google {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
