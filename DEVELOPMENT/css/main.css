@@ -74,35 +74,35 @@ footer nav ul li a{
 }
 
 .home.selected{
-    background-image: url(imgs/logo.png);
+    background-image: url(../imgs/logo.png);
 }
 
 .favorieten.selected{
-    background-image: url(imgs/favorieten.png);
+    background-image: url(../imgs/favorieten.png);
 }
 
 .chat.selected{
-    background-image: url(imgs/chat.png);
+    background-image: url(../imgs/chat.png);
 }
 
 .profiel.selected{
-    background-image: url(imgs/profiel.png);
+    background-image: url(../imgs/profiel.png);
 }
 
 .home{
-    background-image: url(imgs/logo-kleurloos.png);
+    background-image: url(../imgs/logo-kleurloos.png);
 }
 
 .favorieten{
-    background-image: url(imgs/favorieten-kleurloos-beter.png);
+    background-image: url(../imgs/favorieten-kleurloos-beter.png);
 }
 
 .chat{
-    background-image: url(imgs/chat-kleurloos.png);
+    background-image: url(../imgs/chat-kleurloos.png);
 }
 
 .profiel{
-    background-image: url(imgs/profiel-kleurloos.png);
+    background-image: url(../imgs/profiel-kleurloos.png);
 }
 
 @media only screen and (max-width: 330px){
