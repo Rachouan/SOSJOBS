@@ -1,3 +1,7 @@
+#first{
+    margin-top: 100px;
+}
+
 #bottomnav{
     position: fixed;
     bottom: 0;
@@ -19,6 +23,63 @@
     padding: 20px 8% 20px 8%;
 }
 
+#headernav{
+    margin: 0px;
+    margin-top: 30px;
+    font-size: 0.7em;
+    border-bottom: 2px solid #44474D;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #FFFAF0;
+    z-index: 1;
+    margin-top: -100px;
+    
+}
+
+
+
+#headernav ul{
+    padding: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    align-content: center;
+    text-align: center;
+}
+
+#headernav ul li{
+    display: inline;
+    list-style-type: none;
+    margin: -3;
+}
+
+#headernav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: #EE7966;
+}
+
+
+#mostviewed{
+    border-bottom: 2px solid #44474D;
+    
+}
+
+#recent{
+    border-bottom: 2px solid #44474D;
+}
+
+#currenttab{
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #44474D;
+    border-bottom: none;
+    color: #44474D;
+}
+
 .card-top{
     height: 100px;
     width: auto;
@@ -36,7 +97,10 @@
 
 .green{
     background-color: #82BD8B;
-    
+}
+
+.blue{
+    background-color: #8BCBC4;
 }
 
 .card-bottom{
@@ -85,6 +149,7 @@
     left: 90px;
     color: white;
     font-weight: bold;
+    font-size: 0.9em;
 }
 
 .iconcontainer{
