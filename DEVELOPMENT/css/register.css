@@ -22,7 +22,7 @@ p {
 }
 
 .fb {
-    border: 4px solid;
+    border: 2px solid;
     border-color: #3e464c;
     background-color: #5980c1;
     border-radius: 10px;
@@ -45,7 +45,7 @@ p {
 }
 
 .google {
-    border: 4px solid;
+    border: 2px solid;
     border-color: #3e464c;
     background-color: #f37c69;
     border-radius: 10px;
@@ -73,7 +73,7 @@ form p {
 }
 
 .input {
-    border: 4px solid;
+    border: 2px solid;
     border-color: #3e464c;
     border-radius: 10px;
     padding-left: 10px;
@@ -86,7 +86,34 @@ form p {
     background-color: #fff9eb;
 }
 
-#uitleg {
+textarea {
+    display: block;
+    border: 2px solid;
+    border-color: #3e464c;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 80%;
     height: 300px;
+    margin: 20px auto;
+    padding-top: 10px;
+    font-family: Bariol;
+    font-size: 1em;
+    color: #f37c69;
+    background-color: #fff9eb;
+    resize: none;
+}
+
+.submit {
+    border: 2px solid;
+    border-color: #3e464c;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+    font-family: Bariol;
+    font-size: 1em;
+    background-color: #f37c69;
+    color: #fff9eb;
     margin-bottom: 100px;
 }
