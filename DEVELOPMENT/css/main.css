@@ -1,0 +1,33 @@
+/* KLEURENPALET
+
+BACKGROUND: #FFFAF0
+ROOD: #EE7966
+GROEN: #82BD8B
+
+*/
+
+@font-face {
+    font-family: "bariol";
+    src: url(fonts/Bariol_Regular.otf);
+    font-weight: normal;
+    src: url(fonts/Bariol_Bold.otf);
+    font-weight: bold;
+    src: url(fonts/Bariol_Light.otf);
+    font-weight: lighter;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: "bariol", sans-serif;
+    letter-spacing: 1.5;
+}
+
+body{
+    background-color: #FFFAF0;
+}
+
