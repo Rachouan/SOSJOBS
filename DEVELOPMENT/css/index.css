@@ -33,6 +33,28 @@
     font-size: 0.7em;
     border-bottom: 2px solid #44474D;
 }
+header nav.main{
+    width: 90%;
+    padding: 5%; 
+}
+
+header nav.main ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+header nav.main ul li{
+    display: inline-block;
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+}
+header nav.main ul li:first-child{
+    width: 10%;
+}
+header nav.main ul li img{
+    height: 100%;
+}
 
 
 header{
