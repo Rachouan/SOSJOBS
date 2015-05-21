@@ -12,6 +12,56 @@ ZWART: #3f464c
     padding: 0;
 }
 
+
+header#main_head{
+    position: fixed;
+    width: 100%;
+    background-color: #FFFAF0;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+}
+header#main_head nav.main{
+    width: 90%;
+    padding: 0 5%; 
+    height: 100px;
+
+}
+header#main_head nav.main ul{
+    width: 100%;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+header#main_head nav.main ul li{
+    display: inline-block;
+    width: 50%;
+    padding: 0 5%;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+}
+header#main_head nav.main ul li:first-child{
+    width: 5%;
+}
+header#main_head nav.main ul li:last-child{
+    width: 5%;
+}
+header#main_head nav.main ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header#main_head nav.main ul li img{
+    height: 50px;
+}
+header#main_head nav.main ul li:first-child img{
+    height: 30px;
+}
+header#main_head nav.main ul li:last-child img{
+    height: 30px;
+}
+
 @font-face {
     font-family: "bariol";
     src: url(../fonts/Bariol_Regular.otf);
