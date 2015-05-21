@@ -22,6 +22,7 @@ article form div {
 article form div label {
     float: left;
     padding: 10px 0 0 41%;
+    color: #3e464c;
 }
 
 article form div.slider_container {
