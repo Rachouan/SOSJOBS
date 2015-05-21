@@ -314,7 +314,10 @@
             </div>
             <input type="number" pattern="\d*" class="input" placeholder="Rijksregisternummer" id="reg_number" name="reg_number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rijksregisternummer'" />
             <textarea id="about" name="about" placeholder="Over mezelf" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Over mezelf'"></textarea>
-            <input type="file" name="cv" id="cv" accept=".pdf" placeholder="Upload CV (PDF)">
+            <div class="cv">
+                <input type="file" name="cv" id="cv" accept=".pdf" placeholder="Upload CV (PDF)">
+                <p>Upload CV &lpar;PDF&rpar;</p>
+            </div>
             <input type="submit" class="submit" value="Submit" />
         </form>
     </article>

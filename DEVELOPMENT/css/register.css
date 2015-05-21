@@ -170,8 +170,39 @@ article form input[type='file'] {
     float: left;
 }
 
-.styled-select select #kjl {
-    padding-left: 2em;
+article form .cv {
+    width: 90%;
+    padding: 5%;
+    border: 2px solid;
+    border-color: #3e464c;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: Bariol;
+    font-size: 1em;
+    color: #f37c69;
+    background-color: #fff9eb;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+article form .cv input[type='file'] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0;
+    opacity: 0 !important;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+article form .cv p {
+    text-align: center;
+    padding-top: 1em;
+    color: #3e464c;
 }
 
 textarea {
