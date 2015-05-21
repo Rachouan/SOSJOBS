@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
     color: #3e464c;
 }
 
@@ -8,6 +8,7 @@ article {
     float: left;
     width: 90%;
     padding: 5% 5% 20% 5%;
+    margin-top: 0;
 }
 
 article form {
