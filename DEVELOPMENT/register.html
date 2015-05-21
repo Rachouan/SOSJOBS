@@ -24,7 +24,7 @@
     <article>
         <form method='get'>
 
-            `
+            
             <div class='camera'>
                 <input id="file" type="file" accept="image/*">
             </div>
@@ -48,17 +48,19 @@
 
 
             <input type="text" class="gender hide" name='gender' value="M" />
-            <input type="text" class="input" placeholder="Voornaam" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Voornaam'" />
-            <input type="text" class="input" placeholder="Familienaam" name="last_name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Familienaam'" />
-            <input type="password" class="input" placeholder="Wachtwoord" name="passWord" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Wachtwoord'" />
-            <input type="password" class="input" placeholder="Herhaal wachtwoord" name="passWord" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Herhaal wachtwoord'" />
-             <input type="number" class="input" placeholder="Postcode" name="zipCode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
-            <input type="text" class="input" placeholder="Adres" name="address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adres'" />
-            <input type="number" class="input" placeholder="Postcode" name="zipCode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
-            <input type="text" class="input" placeholder="Stad" name="city" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Stad'" />
+            <input type="text" class="input" placeholder="Voornaam" id="name" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Voornaam'" />
+            <input type="text" class="input" placeholder="Familienaam" id="last_name" name="last_name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Familienaam'" />
+            <input type="text" class="input" placeholder="Email" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" />
+            <input type="password" class="input" placeholder="Wachtwoord" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Wachtwoord'" />
+            <input type="password" class="input" placeholder="Herhaal wachtwoord" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Herhaal wachtwoord'" />
+             <input type="number" class="input" placeholder="Geboortedatum" id="birth_date" name="birth_date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Geboortedatum'" />  
+             <input type="number" class="input" placeholder="Telefoon" id="phone" name="phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
+            <input type="text" class="input" placeholder="Adres" id="street" name="street" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adres'" />
+            <input type="number" class="input" placeholder="Postcode" name="zip_code" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
+            <input type="text" class="input" placeholder="Stad" id="town" name="town" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Stad'" />
             <input type="text" class="input" placeholder="Land" name="country" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Land'" />
-            <input type="text" class="input" placeholder="Rijksregisternummer" name="registrationNumber" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rijksregisternummer'" />
-            <textarea id="message" name='message'></textarea>
+            <input type="text" class="input" placeholder="Rijksregisternummer" id="reg_number" name="reg_number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rijksregisternummer'" />
+            <textarea id="about" name="about" placeholder="Over mezelf" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Over mezelf'"></textarea>
 
             <input type="submit" class="submit" value="Submit" />
         </form>
