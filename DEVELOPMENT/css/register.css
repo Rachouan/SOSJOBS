@@ -14,6 +14,18 @@ h1 {
     margin: 0 auto;
 }
 
+#file {
+    display: block;
+    width: 125px;
+    height: 125px;
+    border-radius: 100% !important;
+    background-color: black;
+    position: absolute;
+    top: 115px;
+    left: 33%;
+    opacity: 0 !important;
+}
+
 p {
     text-align: center;
     padding: 20px;

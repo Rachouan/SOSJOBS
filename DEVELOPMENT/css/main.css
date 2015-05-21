@@ -14,11 +14,11 @@ ZWART: #3f464c
 
 @font-face {
     font-family: "bariol";
-    src: url(fonts/Bariol_Regular.otf);
+    src: url(../fonts/Bariol_Regular.otf);
     font-weight: normal;
-    src: url(fonts/Bariol_Bold.otf);
+    src: url(../fonts/Bariol_Bold.otf);
     font-weight: bold;
-    src: url(fonts/Bariol_Light.otf);
+    src: url(../fonts/Bariol_Light.otf);
     font-weight: lighter;
 }
 
