@@ -3,21 +3,19 @@ h1 {
     padding: 40px;
     color: #3e464c;
 }
-article{
+
+article {
     float: left;
     width: 90%;
-    padding: 5% 5% 20% 5%; 
-    
-    
+    padding: 5% 5% 20% 5%;
 }
-article form{
-    
+
+article form {
     float: left;
-    width:100%;
-    
+    width: 100%;
 }
-article form div.slider_container{
-    
+
+article form div.slider_container {
     float: right;
     position: relative;
     width: 45px;
@@ -30,41 +28,37 @@ article form div.slider_container{
     background-color: #fff9eb;
     cursor: pointer;
     color: #3e464c;
-    
 }
-article form div.slider_container span{
-    
+
+article form div.slider_container span {
     float: left;
-    
 }
-article form div.slider_container span:last-child{
-    
+
+article form div.slider_container span:last-child {
     float: right;
-    
 }
-article form div.slider_container .slider{
-    
+
+article form div.slider_container .slider {
     position: absolute;
     width: 20px;
     height: 20px;
-    border-radius: 50%;    
+    border-radius: 50%;
     background-color: #f37c69;
     top: 5px;
     left: 5px;
-    
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     -ms-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-    
 }
-article form div.slider_container .slider.on{
+
+article form div.slider_container .slider.on {
     left: 100%;
     margin-left: -25px;
 }
+
 article form .camera {
-    
     width: 125px;
     height: 125px;
     margin: 0 auto;
@@ -82,7 +76,7 @@ article form .camera input[type='file'] {
     width: 100%;
     height: 100%;
     background-color: black;
-    margin:0;
+    margin: 0;
     opacity: 0 !important;
 }
 
@@ -106,7 +100,7 @@ article form .gender {
 article form input {
     width: 90%;
     padding: 5%;
-     border: 2px solid;
+    border: 2px solid;
     border-color: #3e464c;
     border-radius: 10px;
     margin: 20px 0;
@@ -116,7 +110,7 @@ article form input {
     background-color: #fff9eb;
 }
 
-article form input[type='submit']{
+article form input[type='submit'] {
     width: 100%;
     padding: 5%;
     border: 2px solid;
@@ -139,10 +133,13 @@ article form input[type='submit'].fb {
 
 article form input[type='submit'].google {
     background-color: #f37c69;
-     background-image: url('../imgs/google+logo.png');
+    background-image: url('../imgs/google+logo.png');
     background-size: 20px;
 }
 
+article form input[type='date'] {
+
+}
 
 textarea {
     display: block;

@@ -11,7 +11,7 @@
     <title>SOSJobs - Register</title>
     <meta name="theme-color" content="#F9EACD">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="register.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/register.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/register.css">
 </head>
@@ -47,16 +47,16 @@
             <input type="submit" class="google" value="Registreer met Google" />
 
 
-            <input type="text" class="gender hide" name='gender' value="M" />
+            <input type="text" class="gender hide" name="gender" id="gender" value="M" />
             <input type="text" class="input" placeholder="Voornaam" id="name" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Voornaam'" />
             <input type="text" class="input" placeholder="Familienaam" id="last_name" name="last_name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Familienaam'" />
-            <input type="text" class="input" placeholder="Email" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" />
+            <input type="email" class="input" placeholder="Email" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" />
             <input type="password" class="input" placeholder="Wachtwoord" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Wachtwoord'" />
             <input type="password" class="input" placeholder="Herhaal wachtwoord" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Herhaal wachtwoord'" />
-             <input type="number" class="input" placeholder="Geboortedatum" id="birth_date" name="birth_date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Geboortedatum'" />  
-             <input type="number" class="input" placeholder="Telefoon" id="phone" name="phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
+             <input type="date" pattern="\d*" class="input" placeholder="Geboortedatum" id="birth_date" name="birth_date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Geboortedatum'" />  
+             <input type="tel" class="input" placeholder="Telefoon" id="phone" name="phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
             <input type="text" class="input" placeholder="Adres" id="street" name="street" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adres'" />
-            <input type="number" class="input" placeholder="Postcode" name="zip_code" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
+            <input type="number" pattern="\d*" class="input" placeholder="Postcode" name="zip_code" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
             <input type="text" class="input" placeholder="Stad" id="town" name="town" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Stad'" />
             <input type="text" class="input" placeholder="Land" name="country" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Land'" />
             <input type="text" class="input" placeholder="Rijksregisternummer" id="reg_number" name="reg_number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rijksregisternummer'" />
