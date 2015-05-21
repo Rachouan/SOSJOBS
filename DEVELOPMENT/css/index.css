@@ -46,14 +46,29 @@ header nav.main ul{
 header nav.main ul li{
     display: inline-block;
     width: 50%;
-    padding: 5%;
+    padding: 0 5%;
+    height: 50px;
     text-align: center;
+    line-height: 50px;
 }
 header nav.main ul li:first-child{
     width: 10%;
 }
-header nav.main ul li img{
+header nav.main ul li:last-child{
+    width: 10%;
+}
+header nav.main ul li a{
+    width: 100%;
     height: 100%;
+}
+header nav.main ul li img{
+    height: 50px;
+}
+header nav.main ul li:first-child img{
+    height: 30px;
+}
+header nav.main ul li:last-child img{
+    height: 30px;
 }
 
 
@@ -61,7 +76,7 @@ header{
     position: fixed;
     width: 100%;
     background-color: #FFFAF0;
-    z-index: 1;
+    z-index: 9999;
     margin-top: -150px;
     
 }
