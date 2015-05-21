@@ -15,6 +15,15 @@ article form {
     width: 100%;
 }
 
+article form div {
+    height: 40px;
+}
+
+article form div label {
+    float: left;
+    padding: 10px 0 0 41%;
+}
+
 article form div.slider_container {
     float: right;
     position: relative;
