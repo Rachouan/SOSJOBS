@@ -1,102 +1,148 @@
-div {
-    width: 80%;
-    margin: 15px auto;
-}
-
 h1 {
     text-align: center;
     padding: 40px;
     color: #3e464c;
 }
-
-#camera {
-    display: block;
-    margin: 0 auto;
+article{
+    float: left;
+    width: 90%;
+    padding: 5% 5% 20% 5%; 
+    
+    
 }
-
-#file {
-    display: block;
+article form{
+    
+    float: left;
+    width:100%;
+    
+}
+article form div.slider_container{
+    
+    float: right;
+    position: relative;
+    width: 45px;
+    height: 15px;
+    padding: 7.5px;
+    border: 2px solid;
+    border-color: #3e464c;
+    border-radius: 30px;
+    font-size: 1em;
+    background-color: #fff9eb;
+    cursor: pointer;
+    color: #3e464c;
+    
+}
+article form div.slider_container span{
+    
+    float: left;
+    
+}
+article form div.slider_container span:last-child{
+    
+    float: right;
+    
+}
+article form div.slider_container .slider{
+    
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;    
+    background-color: #f37c69;
+    top: 5px;
+    left: 5px;
+    
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    
+}
+article form div.slider_container .slider.on{
+    left: 100%;
+    margin-left: -25px;
+}
+article form .camera {
+    
     width: 125px;
     height: 125px;
-    border-radius: 100% !important;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(../imgs/Register%20foto%20logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+article form .camera input[type='file'] {
+    display: block;
+    width: 100%;
+    height: 100%;
     background-color: black;
-    position: absolute;
-    top: 115px;
-    left: 33%;
+    margin:0;
     opacity: 0 !important;
 }
 
-p {
+p.tik {
     text-align: center;
     padding: 20px;
     font-size: 1em;
     color: #3e464c;
 }
 
-.fb {
-    border: 2px solid;
-    border-color: #3e464c;
-    background-color: #5980c1;
-    border-radius: 10px;
-    position: relative;
-}
-
-.fb p {
+article form p label {
     text-align: center;
-    font-size: 1em;
-    position: absolute;
-    top: 3px;
-    left: 20%;
-    color: #fff9eb;
-}
-
-#fb {
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 15px;
-}
-
-.google {
-    border: 2px solid;
-    border-color: #3e464c;
-    background-color: #f37c69;
-    border-radius: 10px;
-    position: relative;
-}
-
-.google p {
-    text-align: center;
-    font-size: 1em;
-    position: absolute;
-    top: 3px;
-    left: 20%;
-    color: #fff9eb;
-}
-
-#google {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 15px;
-}
-
-form p {
-    padding: 0;
+    display: block;
     margin: 0 auto;
 }
 
-.input {
-    border: 2px solid;
+article form .gender {
+    display: none;
+}
+
+article form input {
+    width: 90%;
+    padding: 5%;
+     border: 2px solid;
     border-color: #3e464c;
     border-radius: 10px;
-    padding-left: 10px;
-    width: 80%;
-    height: 50px;
-    margin: 20px auto;
+    margin: 20px 0;
     font-family: Bariol;
     font-size: 1em;
     color: #f37c69;
     background-color: #fff9eb;
 }
+
+article form input[type='submit']{
+    width: 100%;
+    padding: 5%;
+    border: 2px solid;
+    border-color: #3e464c;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: Bariol;
+    font-size: 1em;
+    color: #fff9eb;
+    background-color: #f37c69;
+    background-repeat: no-repeat;
+    background-position: center left 7%;
+}
+
+article form input[type='submit'].fb {
+    background-color: #5980c1 !important;
+    background-image: url('../imgs/facebook-logo.png');
+    background-size: 10px;
+}
+
+article form input[type='submit'].google {
+    background-color: #f37c69;
+     background-image: url('../imgs/google+logo.png');
+    background-size: 20px;
+}
+
 
 textarea {
     display: block;
@@ -104,7 +150,7 @@ textarea {
     border-color: #3e464c;
     border-radius: 10px;
     padding-left: 10px;
-    width: 80%;
+    width: 95%;
     height: 300px;
     margin: 20px auto;
     padding-top: 10px;
@@ -113,19 +159,4 @@ textarea {
     color: #f37c69;
     background-color: #fff9eb;
     resize: none;
-}
-
-.submit {
-    border: 2px solid;
-    border-color: #3e464c;
-    border-radius: 10px;
-    padding-left: 10px;
-    width: 80%;
-    height: 50px;
-    margin: 20px auto;
-    font-family: Bariol;
-    font-size: 1em;
-    background-color: #f37c69;
-    color: #fff9eb;
-    margin-bottom: 100px;
 }

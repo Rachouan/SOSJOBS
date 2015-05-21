@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="nl">
-    
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,58 +11,77 @@
     <title>SOSJobs - Register</title>
     <meta name="theme-color" content="#F9EACD">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="import.js"></script>
+    <script language="JavaScript" type="text/javascript" src="register.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
-    
+
     <h1>REGISTREREN</h1>
-        <input id="file" type="file" accept="image/*">
-        <img for="#file" class="camera" src="imgs/Register%20foto%20logo.png" id="camera" alt="camera icon" width="125px" height="125px">
-    
-    <p>Tik om een
-        <br>foto te kiezen.</p>
 
-    <form>
-        <p>
-            <label for="setting1">Geslacht</label>
-            <input type="text" class="hide" value="M"/>
-        </p>
-    </form>
 
-    <div class="fb"> <img src="imgs/facebook%20logo.png" id="fb" alt="facebook logo" height="25px">
-        <p>Registreren met Facebook</p>
-    </div>
+    <article>
+        <form method='get'>
 
-    <div class="google"> <img src="imgs/google+%20logo.png" id="google" alt="google logo" height="25px">
-        <p>Registreren met Google</p>
-    </div>
-    
-    <form>
-        <p>
-            <input type="text" class="input" placeholder="Voornaam" name="firstName" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Voornaam'"/>
-            <br>
-            <input type="text" class="input" placeholder="Familienaam" name="lastName" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Familienaam'"/>
-            <br>
-            <input type="password" class="input" placeholder="Wachtwoord" name="passWord" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Wachtwoord'"/>
-            <input type="password" class="input" placeholder="Herhaal wachtwoord" name="passWord" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Herhaal wachtwoord'"/>
-            <textarea placeholder="Woordje uitleg over jezelf" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Woordje uitleg over jezelf'" wrap="hard"></textarea>
-            <input type="button" class="submit" value="Submit"/>
-        </p>
-    </form>
-    
+            `
+            <div class='camera'>
+                <input id="file" type="file" accept="image/*">
+            </div>
+
+            <p class="tik">Tik om een
+                <br>foto te kiezen.</p>
+
+            <div>
+                <label for="setting1">Geslacht</label>
+                <div class='slider_container'>
+                    <span>M</span>
+                    <div class='slider on'>
+                    </div>
+                    <span>V</span>
+                </div>
+            </div>
+
+            <input type="submit" class="fb" value="Registreer met Facebook" />
+
+            <input type="submit" class="google" value="Registreer met Google" />
+
+
+            <input type="text" class="gender hide" name='gender' value="M" />
+            <input type="text" class="input" placeholder="Voornaam" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Voornaam'" />
+            <input type="text" class="input" placeholder="Familienaam" name="last_name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Familienaam'" />
+            <input type="password" class="input" placeholder="Wachtwoord" name="passWord" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Wachtwoord'" />
+            <input type="password" class="input" placeholder="Herhaal wachtwoord" name="passWord" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Herhaal wachtwoord'" />
+             <input type="number" class="input" placeholder="Postcode" name="zipCode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
+            <input type="text" class="input" placeholder="Adres" name="address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adres'" />
+            <input type="number" class="input" placeholder="Postcode" name="zipCode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
+            <input type="text" class="input" placeholder="Stad" name="city" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Stad'" />
+            <input type="text" class="input" placeholder="Land" name="country" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Land'" />
+            <input type="text" class="input" placeholder="Rijksregisternummer" name="registrationNumber" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rijksregisternummer'" />
+            <textarea id="message" name='message'></textarea>
+
+            <input type="submit" class="submit" value="Submit" />
+        </form>
+    </article>
+
 </body>
-    <footer>
-            <nav>
-                <ul>
-                    <li><a href="" class="home"></a></li>
-                    <li><a href="" class="favorieten"></a></li>
-                    <li><a href="" class="chat"></a></li>
-                    <li><a href="" class="profiel selected"></a></li>
-                </ul>
-            </nav>
-        </footer>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="" class="home"></a>
+            </li>
+            <li>
+                <a href="" class="favorieten"></a>
+            </li>
+            <li>
+                <a href="" class="chat"></a>
+            </li>
+            <li>
+                <a href="" class="profiel selected"></a>
+            </li>
+        </ul>
+    </nav>
+</footer>
 
 </html>
