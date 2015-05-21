@@ -134,6 +134,7 @@ article form input[type='submit'] {
     background-color: #f37c69;
     background-repeat: no-repeat;
     background-position: center left 7%;
+    cursor: pointer;
     appearance:none;
 -moz-appearance:none; /* Firefox */
 -webkit-appearance:none; /* Safari and Chrome */
