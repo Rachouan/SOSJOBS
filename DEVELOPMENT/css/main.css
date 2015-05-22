@@ -94,14 +94,14 @@ header#main_head nav.main ul li:last-child img{
 
 @font-face {
     font-family: "Bariol_Bold";
-    src: url(../fonts/Bariol_Bold.otf);
-    font-weight: bold;
+    src: url(../fonts/Bariol-Bold.otf);
+    font-weight: normal;
 }
 
 @font-face {
     font-family: "Bariol_Light";
-    src: url(../fonts/Bariol_Light.otf);
-    font-weight: lighter;
+    src: url(../fonts/Bariol-Light.otf);
+    font-weight: normal;
 }
 
 
