@@ -1,0 +1,48 @@
+header{
+    text-align: center;
+}
+
+header h1{
+    font-size: 15px;
+    padding: 40px 0;
+}
+
+header a{
+    float: left;
+    width: 20%;
+    height: 100px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    background-image: url(../pics/pijltje.svg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.settings h1{
+    color: #3f464c;
+    font-size: 15px;
+}
+
+.settings a{
+    text-decoration: none;
+}
+
+.settings .settingtxt{
+    color: #f47d69;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.settings{
+    padding: 5%;
+    border-bottom: 4px solid #3f464c;
+
+}
+
+.settings:first-child{
+    border-top: 4px solid #3f464c;
+}
