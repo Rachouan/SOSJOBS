@@ -1,0 +1,61 @@
+a{
+    text-decoration: none;  
+}
+header#main_head nav.main ul li a h1{
+    font-size: 0.8em;
+    color: #44474D;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+header#main_head nav.main ul li a img{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+#content{
+    width: 90%;
+    margin: 100px 5% 0;
+    text-align: center;
+}
+
+#content ul.achievements{
+    text-align: center;
+    margin-bottom: 75px;
+    float: left;
+    width: 100%;
+}
+
+#content ul.achievements li{
+    display: block;
+    margin:30px 0;
+    width: 33.33%;
+    float: left;
+}
+
+#content ul.achievements li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+
+#content ul.achievements li a img{
+    height: 50px;
+    display: block;
+    margin: auto;
+    border:2px solid #44474D;
+    border-radius: 100%;
+    background-color: #f37c69;
+}
+
+#content ul.achievements li span{
+    width:100%;
+    margin-top: 20px;
+    display: block;
+    text-transform: uppercase;
+    color: #44474D;
+    font-size: 0.8em;
+}
