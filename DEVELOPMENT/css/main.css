@@ -87,17 +87,27 @@ header#main_head nav.main ul li:last-child img{
 }
 
 @font-face {
-    font-family: "bariol";
+    font-family: "Bariol_Regular";
     src: url(../fonts/Bariol_Regular.otf);
     font-weight: normal;
+}
+
+@font-face {
+    font-family: "Bariol_Bold";
     src: url(../fonts/Bariol_Bold.otf);
     font-weight: bold;
+}
+
+@font-face {
+    font-family: "Bariol_Light";
     src: url(../fonts/Bariol_Light.otf);
     font-weight: lighter;
 }
 
+
+
 html, body{
-    font-family: "bariol", sans-serif;
+    font-family: "Bariol_Regular", sans-serif;
     letter-spacing: 1.5;
 }
 
