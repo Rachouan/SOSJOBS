@@ -102,6 +102,11 @@ article.feed section header a h1{
     float: left;
     font-size: .8em;
     font-weight: bold;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
 }
 article.feed section header a h2{
     float: left;
