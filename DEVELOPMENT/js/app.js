@@ -21,7 +21,7 @@ $(function () {
 
 			}
 
-			if(prevScroll > top){
+			if(prevScroll-20 > top){
 
 				$("header#main_head").removeClass("close");
 				$("footer nav").removeClass("close");
