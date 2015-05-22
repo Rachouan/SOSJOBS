@@ -206,21 +206,24 @@ article.detail header{
 
 article.detail header h1{
     
+    position: relative;
     margin: 0 auto;
-    width: 60%;
+    width: 90%;
     height: auto;
-    margin-top: 20px;
+    margin: 20px auto;
     text-align: center;
     font-size: 1em;
+    text-transform: uppercase;
 
 }
 
-article.detail header h1 span{
+article.detail header h1 span.back{
     
     position: absolute;
     height: 35px;
     width: 35px;
-    left: 10px;
+    top: 50%;
+    left: 0;
     margin-top: -17.5px;
     cursor: pointer;
 
@@ -265,7 +268,7 @@ article.detail .jobinfo p{
     text-align: right;
     background-image: url(../pics/location.svg);
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 15px;
     background-position: center left;
 }
 
