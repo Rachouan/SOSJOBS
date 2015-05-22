@@ -1,17 +1,11 @@
 a{
     text-decoration: none;  
 }
-header#main_head nav.main ul li a h1{
-    font-size: 0.8em;
-    color: #44474D;
-    text-transform: uppercase;
-    line-height: 100px;
-}
 
-header#main_head nav.main ul li a img{
-    transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
+header#main_head nav.main ul li:first-child{
+    width: 10%;
+    height: 50px;
+    margin-top: 10px;
 }
 
 #content{
