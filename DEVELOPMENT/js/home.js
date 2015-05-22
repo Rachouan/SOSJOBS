@@ -17,7 +17,6 @@ $(function  () {
 		$(".detail header h1 .back").on("click",function () {
 			$(".detail").addClass("close");
 
-			$("meta[name='theme-color']").attr("content","#F9EACD");
 		});
 	}
 
@@ -28,8 +27,7 @@ $(function  () {
 		console.log(id);
 
 		$(".detail").removeClass("close");
-
-		$("meta[name='theme-color']").attr("content","#44474D");
+		
 	}
 
 });
