@@ -45,11 +45,14 @@ header#main_head nav.main{
 header#main_head nav.main ul{
     width: 100%;
     float: left;
-    height: 100%;
+    height: 75px;
+    margin-top: 15px;
     text-align: center;
 }
 header#main_head nav.main ul li{
-    display: inline-block;
+
+    display: block;
+    float: left;
     width: 50%;
     padding: 0 5%;
     height: 75px;
@@ -57,10 +60,14 @@ header#main_head nav.main ul li{
     line-height: 75px;
 }
 header#main_head nav.main ul li:first-child{
-    width: 5%;
+    width: 10%;
+    height: 50px;
+    margin-top: 16px;
 }
 header#main_head nav.main ul li:last-child{
-    width: 5%;
+    width: 10%;
+    height: 50px;
+    margin-top: 16px;
 }
 header#main_head nav.main ul li a{
     display: block;
@@ -69,6 +76,7 @@ header#main_head nav.main ul li a{
     text-align: center;
 }
 header#main_head nav.main ul li img{
+    margin-top: 10px;
     height: 50px;
 }
 header#main_head nav.main ul li:first-child img{
