@@ -20,7 +20,9 @@
 
 <body>
 
-    <h1>REGISTREREN</h1>
+    <header id='top'>
+        <h1>REGISTREREN</h1>
+    </header>
 
     <article>
         <form method='get'>
@@ -48,7 +50,9 @@
 
 
             <section>
-                <header class="basic_info"><h1>Basic info</h1></header>
+                <header class="basic_info">
+                    <h1>Basic info</h1>
+                </header>
                 <input type="text" class="gender hide" name="gender" id="gender" value="M" />
                 <input type="text" class="input" placeholder="Voornaam" id="name" name="name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Voornaam'" />
                 <input type="text" class="input" placeholder="Familienaam" id="last_name" name="last_name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Familienaam'" />
@@ -60,7 +64,9 @@
             </section>
 
             <section>
-                <header class="location"><h1>Location</h1></header>
+                <header class="location">
+                    <h1>Locatie</h1>
+                </header>
                 <input type="text" class="input" placeholder="Adres" id="street" name="street" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adres'" />
                 <input type="number" pattern="\d*" class="input" placeholder="Postcode" name="zip_code" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Postcode'" />
                 <input type="text" class="input" placeholder="Stad" id="town" name="town" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Stad'" />
@@ -319,8 +325,14 @@
                     </select>
                 </div>
             </section>
-            <input type="number" pattern="\d*" class="input" placeholder="Rijksregisternummer" id="reg_number" name="reg_number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rijksregisternummer'" />
-            <textarea id="about" name="about" placeholder="Over mezelf" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Over mezelf'"></textarea>
+
+            <section>
+                <header class="other_info">
+                    <h1>Andere info</h1>
+                </header>
+                <input type="number" pattern="\d*" class="input" placeholder="Rijksregisternummer" id="reg_number" name="reg_number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rijksregisternummer'" />
+                <textarea id="about" name="about" placeholder="Over mezelf" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Over mezelf'"></textarea>
+            </section>
             <div class="cv">
                 <input type="file" name="cv" id="cv" accept=".pdf" placeholder="Upload CV (PDF)">
                 <p>Upload CV &lpar;PDF&rpar;</p>

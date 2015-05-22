@@ -1,4 +1,4 @@
-h1 {
+header#top h1 {
     text-align: center;
     padding: 40px 40px 10px 40px;
     color: #3e464c;
@@ -111,6 +111,23 @@ article form .gender {
 
 article form section header {
     width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 30px;
+}
+
+article form section .basic_info {
+    background-image: url(../imgs/profiel.png);
+}
+
+article form section .location {
+    background-image: url(../imgs/loclogo2.png);
+}
+
+article form section .other_info {
+    background-image: url(../imgs/Settings.png);
 }
 
 article form input {
