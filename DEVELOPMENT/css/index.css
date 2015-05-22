@@ -175,6 +175,7 @@ article.detail{
     top: 0;
     width: 100%;
     height: 100%;
+    overflow-y:scroll; 
     background-color: #FFFAF0;
 }
 
@@ -185,6 +186,7 @@ article.detail header{
     padding: 5%;
     text-align: center;
     color: #FFFAF0;
+    border-bottom: 2px solid #44474D;
 
 
 }
@@ -229,10 +231,49 @@ article.detail .jobinfo{
 article.detail .jobinfo p{
     float: left;
     display: block;
-    padding: 20px;
+    padding: 0px 0px 0px 30px;
+    text-align: right;
     background-image: url(../pics/location.svg);
     background-repeat: no-repeat;
+    background-size: 20px;
     background-position: center left;
+}
+
+article.detail aside .info{
+    
+    float: left;
+    width: 80%;
+    padding: 10%;
+    
+
+}
+article.detail .info h1{
+
+    font-family: Bariol_Bold;
+    font-size: 1.2em;
+}
+article.detail .info p{
+    
+    margin-top: 20px;
+    font-size: .8em;
+}
+
+article.detail aside nav{
+    
+    float: left;
+    width: 100%;
+    text-align: center;
+    
+
+}
+article.detail aside nav ul li{
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+}
+article.detail aside nav ul li img{
+    height: 100%;
 }
 
 article.detail .jobinfo p:last-child{
