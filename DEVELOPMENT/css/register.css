@@ -189,10 +189,6 @@ article form input[type='submit'].google {
     background-size: 20px;
 }
 
-article form input[type='file'] {
-    
-}
-
 .styled-select select {
     border: 2px solid;
     border-color: #3e464c;
