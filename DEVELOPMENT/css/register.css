@@ -133,6 +133,95 @@ article form section header {
     float: left;
 }
 
+article form section .birth_date {
+    border: 2px solid;
+    border-color: #3e464c;
+    background-color: #fff9eb;
+    color: #f37c69;
+    border-radius: 10px;
+    font-size: 1em;
+    float: left;
+    width: 90%;
+    padding: 5%;
+}
+article form section .birth_date div {
+    float: left;
+    width: 40%;
+    margin: 0 1%;
+    text-align: center;
+}
+
+article form section .birth_date div.day{
+    float: left;
+    width: 20%;
+    
+}
+article form section .birth_date div.year{
+    float: left;
+    width: 30%;
+}
+
+article form section .birth_date div select {
+    border: 1px solid;
+    border-color: #3e464c;
+    background-color: #fff9eb;
+    color: #f37c69;
+    border-radius: 10px;
+    font-family: Bariol_Regular, sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    width: 100%;
+    border-radius: 0px;
+}
+
+article form section .birth_date h1 {
+    color: #3e464c;
+    float: left;
+    width: 100%;
+}
+
+/*.day select {
+    border: 2px solid;
+    border-color: #3e464c;
+    background-color: #fff9eb;
+    color: #f37c69;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: Bariol_Regular, sans-serif;
+    font-size: 1em;
+    float: left;
+    position: absolute;
+    display: inline-block;
+}
+
+.month select {
+    border: 2px solid;
+    border-color: #3e464c;
+    background-color: #fff9eb;
+    color: #f37c69;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: Bariol_Regular, sans-serif;
+    font-size: 1em;
+    float: left;
+    position: absolute;
+    display: inline-block;
+}
+
+.year select {
+    border: 2px solid;
+    border-color: #3e464c;
+    background-color: #fff9eb;
+    color: #f37c69;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-family: Bariol_Regular, sans-serif;
+    font-size: 1em;
+    float: left;
+    position: absolute;
+    display: inline-block;
+}*/
+
 article form section .basic_info {
     background-image: url(../imgs/profiel.png);
 }
