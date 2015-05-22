@@ -9,8 +9,34 @@ $(function () {
 		$(window).on("scroll",function () {
 
 			console.log("scroll");
-			$("header#main_head").addClass("close");
 
+			var top = $(window).scrollTop();
+
+			if(prevScroll+50 < top){
+
+				$("header#main_head").addClass("close");
+				$("footer nav").addClass("close");
+
+				prevScroll = top;
+
+			}
+
+			if(prevScroll > top){
+
+				$("header#main_head").removeClass("close");
+				$("footer nav").removeClass("close");
+
+			}	
+
+		});
+
+
+		$(document).on("scrollstop",function(){
+
+			console.log("scroll stopped");
+			var top = $(window).scrollTop();
+
+			prevScroll = top;
 		});
 
 	}	
