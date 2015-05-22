@@ -116,7 +116,6 @@ article form input {
     border-color: #3e464c;
     border-radius: 10px;
     margin: 20px 0;
-    font-family: Bariol_Regular, sans-serif;
     font-size: 1em;
     color: #f37c69;
     background-color: #fff9eb;
@@ -129,7 +128,6 @@ article form input[type='submit'] {
     border-color: #3e464c;
     border-radius: 10px;
     margin: 20px 0;
-    font-family: Bariol_Regular, sans-serif;
     font-size: 1em;
     color: #fff9eb;
     background-color: #f37c69;
@@ -137,8 +135,8 @@ article form input[type='submit'] {
     background-position: center left 7%;
     cursor: pointer;
     appearance:none;
--moz-appearance:none; /* Firefox */
--webkit-appearance:none; /* Safari and Chrome */
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
 }
 
 article form input[type='submit'].fb {
@@ -164,7 +162,6 @@ article form input[type='file'] {
     color: #f37c69;
     border-radius: 10px;
     margin: 20px 0;
-    font-family: Bariol_Regular, sans-serif;
     font-size: 1em;
     width: 100%;
     height: 50px;
@@ -179,7 +176,6 @@ article form .cv {
     border-color: #3e464c;
     border-radius: 10px;
     margin: 20px 0;
-    font-family: Bariol_Regular, sans-serif;
     font-size: 1em;
     color: #f37c69;
     background-color: #fff9eb;
@@ -217,7 +213,6 @@ textarea {
     height: 300px;
     margin: 20px auto;
     padding-top: 10px;
-    font-family: Bariol_Regular, sans-serif;
     font-size: 1em;
     color: #f37c69;
     background-color: #fff9eb;
