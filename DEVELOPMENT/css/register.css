@@ -143,12 +143,14 @@ article form section .birth_date {
     float: left;
     width: 90%;
     padding: 5%;
+    height: 50px;
 }
 article form section .birth_date div {
     float: left;
     width: 40%;
     margin: 1%;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 article form section .birth_date div.day{
