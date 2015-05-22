@@ -26,20 +26,21 @@ $(function () {
 				$("header#main_head").removeClass("close");
 				$("footer nav").removeClass("close");
 
-				prevScroll = top;
+				//prevScroll = top;
 
 			}	
 
 		});
 
 
-		/*$(document).on("scrollstop",function(){
+		$(document).on("scrollstop",function(){
 
 			console.log("scroll stopped");
 			var top = $(window).scrollTop();
 
 			prevScroll = top;
-		});*/
+
+		});
 
 	}	
 
