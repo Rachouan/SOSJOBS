@@ -162,7 +162,7 @@ article form section .birth_date div.year{
 }
 
 article form section .birth_date div select {
-    border: 1px solid;
+    border: 2px solid;
     border-color: #3e464c;
     background-color: #fff9eb;
     color: #f37c69;
@@ -171,7 +171,7 @@ article form section .birth_date div select {
     font-size: 1em;
     display: inline-block;
     width: 100%;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 article form section .birth_date h1 {
