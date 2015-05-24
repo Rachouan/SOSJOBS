@@ -15,7 +15,7 @@ $(function  () {
 
 				var htmlString = "";
 
-				htmlString += '<header class="red"><a href="" class="info" id="'+val.id+'">';
+				htmlString += '<header class="color'+val.color_code+'"><a href="" class="info" id="'+val.id+'">';
 				htmlString += '<img src="https://d13yacurqjgara.cloudfront.net/users/180760/avatars/normal/TEC---Dribble-Avatar-Red-01.png">';
 				htmlString += '<div><h1>'+val.title+'</h1><h2>'+val.location+'</h2></div><span class="detail"></span>';
 				htmlString += '</a></header>';

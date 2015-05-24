@@ -21,6 +21,18 @@ ZWART: #3f464c
 .hide{
     display: none;
 }
+.color0{
+    background-color: #EE7966;
+}
+.color1{
+    background-color: #8AC9BA;
+}
+.color2{
+    background-color: #75B588;
+}
+.color3{
+    background-color: #F28B66;
+}
 
 
 header#main_head{
