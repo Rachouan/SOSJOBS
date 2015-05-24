@@ -131,7 +131,7 @@ html, body{
 }
 
 body{
-    background-color: #FFFAF0;
+    background-color: #FFF8E8;
 }
 
 
@@ -140,7 +140,7 @@ footer nav{
     border-top: 2px;
     border-top-color: #3f464c;
     border-top-style: solid;
-    background-color: #FFFAF0;
+    background-color: #FFF8E8;
     position: fixed;
     width: 100%;
     text-align: center;
