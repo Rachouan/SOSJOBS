@@ -21,7 +21,7 @@ $(function  () {
 				htmlString += '</a></header>';
 				htmlString += '<aside><header class="hide"><h1>vacancie options</h1></header>';
 				htmlString += '<nav><header class="hide"><h1>vacancie navigation</h1></header>';
-				htmlString += '<ul><li class="fav"><span class="hide">favorite</span></li><li class="share"><span class="hide">>share</span></li><li><span>APPLY</span></li><li class="delete"><span class="hide">>delete</span></li></ul>';
+				htmlString += '<ul><li class="fav" id="'+val.id+'"><span class="hide">favorite</span></li><li class="share"><span class="hide">>share</span></li><li><span>APPLY</span></li><li class="delete"><span class="hide">>delete</span></li></ul>';
 				htmlString += ' </nav> </aside>';
 
 				var newSection = $('<section/>').html(htmlString);
@@ -45,6 +45,31 @@ $(function  () {
 				$(".detail").addClass("close");
 
 				$("meta[name='theme-color']").attr("content","#F9EACD");
+			});
+
+			$(".fav").on("click",function (e) {
+
+				$("#vacancy_id").val($(this).attr('id'));
+				$("#student_id").val(2);
+
+				var postData = $(favourite_form).serializeArray();
+	            var formURL = $(favourite_form).attr("action");
+
+	            $.ajax(
+	            {
+	                url : formURL,
+	                type: "POST",
+	                data : postData,
+	                success:function(data, textStatus, jqXHR) 
+	                {
+	                    console.log(data);
+	                },
+	                error: function(jqXHR, textStatus, errorThrown) 
+	                {
+	                    console.log(textStatus);  
+	                }
+	            });
+
 			});
 
 			/*$(".detail header .job").text(data.title);
