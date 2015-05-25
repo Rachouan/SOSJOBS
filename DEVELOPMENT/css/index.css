@@ -1,3 +1,62 @@
+header#main_head nav.main ul li a {
+height: auto;
+}
+
+header#main_head nav.main ul li ul.dropdown {
+    position: absolute;
+    left: -9999px;
+}
+
+header#main_head nav.main ul li:hover ul.dropdown {
+    left: -50px;
+    top: -5px;
+}
+
+header#main_head nav.main ul li ul.dropdown li {
+    float: left;
+    width: 90px;
+    height: 40px;
+    z-index: 5;
+    margin-top: 0;
+    padding-left: 10px;
+    text-align: left;
+    background-color: #FFFAF0;
+    border: 2px solid #44474D;
+    line-height: 40px;
+    color: #44474D;
+}
+
+header#main_head nav.main ul li ul.dropdown li a {
+    text-decoration: none;
+    text-align: left;
+    color: #44474D;
+}
+
+header#main_head nav.main ul li ul.dropdown li a:hover {
+    color: #EE7966;
+}
+
+header#main_head nav.main ul li ul.dropdown li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #44474D;
+}
+
+header#main_head nav.main ul li ul.dropdown li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid #44474D;
+}
+
+header#main_head nav.main ul li ul.dropdown li:hover {
+    
+}
+
+header#main_head nav.main ul li:last-child {
+    height: 0px;
+    position: relative;
+}
+
 header#main_head nav.tabs{
     width: 100%;
     height: 50px;
