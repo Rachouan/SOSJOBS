@@ -3,11 +3,11 @@ $(function  () {
 	function init () {
 
 		var user = JSON.parse(localStorage.getItem('user'));
-		
+
 		if($(user).lenght > 0){
 
 					var sendInfo = {
-                   achievement_id: 2,
+                   achievement_id: 1,
                    student_id: student_id
                };
 
