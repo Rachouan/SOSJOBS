@@ -150,11 +150,13 @@ $(function  () {
 
 				$("meta[name='theme-color']").attr("content","#F9EACD");
 			});
+            
+            var user = JSON.parse(localStorage.getItem('user'));
 
 			$(".fav").on("click",function (e) {
 
 				$("#vacancy_id").val($(this).attr('id'));
-				$("#student_id").val(2);
+				$("#student_id").val(user.id);
 
 				var postData = $(favourite_form).serializeArray();
 	            var formURL = $(favourite_form).attr("action");
