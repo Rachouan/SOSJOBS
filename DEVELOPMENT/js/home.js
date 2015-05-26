@@ -2,97 +2,8 @@ $(function  () {
 
 	function init () {
 
-		var user = JSON.parse(localStorage.getItem('user'));
 
-		if($(user).lenght > 0){
-
-					var sendInfo = {
-                   achievement_id: 1,
-                   student_id: student_id
-               };
-
-                $.ajax(
-                {
-                    url : "http://rachouanrejeb.be/sosjobs/api/getAchievement/",
-                    type: "POST",
-                    data : sendInfo,
-                    success:function(data, textStatus, jqXHR) 
-                    {
-            			var min = parseInt(data.min);
-            			var max = parseInt(data.max);
-
-            			console.log(data.min,data.max);
-
-            			if( min < max){
-
-            				min++;
-
-            				console.log("update achievement");
-
-            				var sendInfo = {
-			                   achievement_id: data.achievement_id,
-			                   student_id: student_id,
-			                   min:min
-			               };
-
-	        				$.ajax(
-			                {
-			                    url : "http://rachouanrejeb.be/sosjobs/api/updateAchievement/",
-			                    type: "POST",
-			                    data : sendInfo,
-			                    success:function(data, textStatus, jqXHR) 
-			                    {
-
-			            			console.log(data);
-
-	                                var id = parseInt(data.student_id);
-
-	                                console.log(id,student_id);
-
-	                                if(id == student_id){
-	                                	var sendInfo = {
-						                   achievement_id: data.achievement_id,
-						                   student_id: student_id,
-						                   unlock:1
-						               };
-
-			        				$.ajax(
-					                {
-					                    url : "http://rachouanrejeb.be/sosjobs/api/unlockAchievement/",
-					                    type: "POST",
-					                    data : sendInfo,
-					                    success:function(data, textStatus, jqXHR) 
-					                    {
-					            			console.log(data);
-					            			$(".achievement_container section img").attr("src","pics/achievements/"+data.name+"-unlocked.svg");
-					            			$(".achievement_container section h1").text(data.name);
-					            			$(".achievement_container section p").text(data.description);
-
-					            			$(".achievement_container").addClass("open");
-					                    },
-					                    error: function(jqXHR, textStatus, errorThrown) 
-					                    {
-					                        console.log(textStatus);  
-					                    }
-					                });
-	                                }
-			                    },
-			                    error: function(jqXHR, textStatus, errorThrown) 
-			                    {
-			                        console.log(textStatus);  
-			                    }
-			                });
-
-            			}
-            			
-                    },
-                    error: function(jqXHR, textStatus, errorThrown) 
-                    {
-                        console.log(textStatus);  
-                    }
-                });
-
-				}
+		firstOpen();
 
 		
 		$.ajax({
@@ -310,6 +221,111 @@ $(function  () {
 		
 
 		$("meta[name='theme-color']").attr("content","#44474D");
+	}
+
+
+
+
+
+	function firstOpen () {
+
+		var loggedIn = localStorage.getItem("loggedIn");
+		var user = JSON.parse(localStorage.getItem("user"));
+		var student_id = parseInt(user.id);
+
+		console.log(user);
+
+		if(loggedIn){
+
+			var sendInfo = {
+           achievement_id: 1,
+           student_id: student_id
+       };
+
+        $.ajax(
+        {
+            url : "http://rachouanrejeb.be/sosjobs/api/getAchievement/",
+            type: "POST",
+            data : sendInfo,
+            success:function(data, textStatus, jqXHR) 
+            {
+    			var min = parseInt(data.min);
+    			var max = parseInt(data.max);
+
+    			console.log(data.min,data.max);
+
+    			if( min < max){
+
+    				min++;
+
+    				console.log("update achievement");
+
+    				var sendInfo = {
+	                   achievement_id: data.achievement_id,
+	                   student_id: student_id,
+	                   min:min
+	               };
+
+    				$.ajax(
+	                {
+	                    url : "http://rachouanrejeb.be/sosjobs/api/updateAchievement/",
+	                    type: "POST",
+	                    data : sendInfo,
+	                    success:function(data, textStatus, jqXHR) 
+	                    {
+
+	            			console.log(data);
+
+                            var id = parseInt(data.student_id);
+
+                            console.log(id,student_id);
+
+                            if(id == student_id){
+                            	var sendInfo = {
+				                   achievement_id: data.achievement_id,
+				                   student_id: student_id,
+				                   unlock:1
+				               };
+
+	        				$.ajax(
+			                {
+			                    url : "http://rachouanrejeb.be/sosjobs/api/unlockAchievement/",
+			                    type: "POST",
+			                    data : sendInfo,
+			                    success:function(data, textStatus, jqXHR) 
+			                    {
+			            			console.log(data);
+			            			$(".achievement_container section img").attr("src","pics/achievements/"+data.name+"-unlocked.svg");
+			            			$(".achievement_container section h1").text(data.name);
+			            			$(".achievement_container section p").text(data.description);
+
+			            			$(".achievement_container").addClass("open");
+			                    },
+			                    error: function(jqXHR, textStatus, errorThrown) 
+			                    {
+			                        console.log(textStatus);  
+			                    }
+			                });
+                            }
+	                    },
+	                    error: function(jqXHR, textStatus, errorThrown) 
+	                    {
+	                        console.log(textStatus);  
+	                    }
+	                });
+
+    			}
+    			
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                console.log(textStatus);  
+            }
+        });
+
+		}else{
+			window.location.replace("login.html");
+		}
 	}
 
 });
