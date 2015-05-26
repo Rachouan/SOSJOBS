@@ -8,8 +8,9 @@ header {
     margin-top: 50px;
 }
 
-h3 {
+h2, h3 {
     font-weight: normal;
+    color: #3e464c;
 }
 
 article {
@@ -28,6 +29,7 @@ article form p {
     float: left;
     text-align: center;
     width: 100%;
+    color: #3e464c;
 }
 
 article form div {
@@ -57,7 +59,9 @@ article form .no_account, .forgot {
     display: block;
 }
 
-
+article form .no_account:hover, .forgot:hover {
+    color: #AF493E;
+}
 
 input {
     border: 2px solid #3e464c;
