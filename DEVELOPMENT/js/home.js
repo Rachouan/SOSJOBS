@@ -12,7 +12,7 @@ $(function  () {
 			console.log("done");
 			console.log(data);
 
-			$(data).each(function  (key,val) {
+			$(data).each(function (key,val) {
 
 				var htmlString = "";
 
@@ -128,8 +128,9 @@ $(function  () {
 				console.log("clicked");
 
 				var currentId = $(this).attr("id");
+				var color = $(this).parent().attr("class");
 				
-				showDetail(currentId);
+				showDetail(currentId,color);
 				
 			});
 
@@ -175,9 +176,11 @@ $(function  () {
 
 	init();
 
-	function showDetail (id) {
+	function showDetail (id,color) {
 
-		console.log(id);
+		console.log(id,color);
+
+		$(".detail header").attr("class",color);
 		var url = "http://rachouanrejeb.be/sosjobs/api/vacancies/"+id;
 
 		$.ajax({
