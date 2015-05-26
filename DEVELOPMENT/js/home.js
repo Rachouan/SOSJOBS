@@ -165,11 +165,6 @@ $(function  () {
 
 			});
 
-			/*$(".detail header .job").text(data.title);
-			$(".detail header .jobinfo .locatie").text(data.location);
-			$(".detail header .jobinfo .soort").text(data.category);
-			$(".detail aside .info").text(data.description);*/
-
 
 		});
 	}

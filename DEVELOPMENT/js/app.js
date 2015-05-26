@@ -2,9 +2,6 @@ $(function () {
 
 	var prevScroll = 0;
 
-
-	localStorage.setItem("id", 11);
-
 	function init () {
 
 		console.log("init");
