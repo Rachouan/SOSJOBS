@@ -2,42 +2,53 @@ $(function (){
 
 	function init () {
 
-		console.log("init");
 
-		$("#login").submit(function(e) {
+                var loggedIn = localStorage.getItem("loggedIn");
 
-            e.preventDefault();
+                if(!loggedIn){
 
-            var postData = $(this).serializeArray();
-            var formURL = $(this).attr("action");
+                console.log("init");
 
-            $.ajax(
-            {
-                url : formURL,
-                type: "POST",
-                data : postData,
-                success:function(data, textStatus, jqXHR) 
-                {
-                    console.log($(data).length);
+                $("#login").submit(function(e) {
 
-        			if($(data).length > 0){
-				        var dataToStore = JSON.stringify(data);
-						localStorage.setItem('user', dataToStore);
-						localStorage.setItem('loggedIn',true);
+                    e.preventDefault();
 
-						window.location.replace("index.html");
-        			}else{
-        				console.log("user doesn't exist");
-        			}
+                    var postData = $(this).serializeArray();
+                    var formURL = $(this).attr("action");
+
+                    $.ajax(
+                    {
+                        url : formURL,
+                        type: "POST",
+                        data : postData,
+                        success:function(data, textStatus, jqXHR) 
+                        {
+                            console.log($(data).length);
+
+                                if($(data).length > 0){
+                                        var dataToStore = JSON.stringify(data);
+                                                localStorage.setItem('user', dataToStore);
+                                                localStorage.setItem('loggedIn',true);
+
+                                                window.location.replace("index.html");
+                                }else{
+                                        console.log("user doesn't exist");
+                                }
 
                     
-                },
-                error: function(jqXHR, textStatus, errorThrown) 
-                {
-                    console.log(textStatus);  
-                }
-            });
-        });
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) 
+                        {
+                            console.log(textStatus);  
+                        }
+                    });
+                });
+
+                }else{
+                        window.location.replace("profiel-Student.html");
+                }
+
+		
 	}
 
 	init();

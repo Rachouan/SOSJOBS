@@ -9,26 +9,26 @@ $(function  () {
 		  context: document.body
 		}).done(function(data) {
 
-			console.log("done");
-			console.log(data);
+		console.log("done");
+		console.log(data);
 
-			$(data).each(function (key,val) {
+		$(data).each(function (key,val) {
 
-				var htmlString = "";
+			var htmlString = "";
 
-				htmlString += '<header class="color'+val.color_code+'"><a href="" class="info" id="'+val.id+'">';
-				htmlString += '<img src="https://d13yacurqjgara.cloudfront.net/users/180760/avatars/normal/TEC---Dribble-Avatar-Red-01.png">';
-				htmlString += '<div><h1>'+val.title+'</h1><h2>'+val.location+'</h2></div><span class="detail"></span>';
-				htmlString += '</a></header>';
-				htmlString += '<aside><header class="hide"><h1>vacancie options</h1></header>';
-				htmlString += '<nav><header class="hide"><h1>vacancie navigation</h1></header>';
-				htmlString += '<ul><li class="fav" id="'+val.id+'"><span class="hide">favorite</span></li><li class="share"><span class="hide">>share</span></li><li><span>APPLY</span></li><li class="delete"><span class="hide">>delete</span></li></ul>';
-				htmlString += ' </nav> </aside>';
+			htmlString += '<header class="color'+val.color_code+'"><a href="" class="info" id="'+val.id+'">';
+			htmlString += '<img src="https://d13yacurqjgara.cloudfront.net/users/180760/avatars/normal/TEC---Dribble-Avatar-Red-01.png">';
+			htmlString += '<div><h1>'+val.title+'</h1><h2>'+val.location+'</h2></div><span class="detail"></span>';
+			htmlString += '</a></header>';
+			htmlString += '<aside><header class="hide"><h1>vacancie options</h1></header>';
+			htmlString += '<nav><header class="hide"><h1>vacancie navigation</h1></header>';
+			htmlString += '<ul><li class="fav" id="'+val.id+'"><span class="hide">favorite</span></li><li class="share"><span class="hide">>share</span></li><li><span>APPLY</span></li><li class="delete"><span class="hide">>delete</span></li></ul>';
+			htmlString += ' </nav> </aside>';
 
-				var newSection = $('<section/>').html(htmlString);
+			var newSection = $('<section/>').html(htmlString);
 
-				$("article.feed").append(newSection);
-			});
+			$("article.feed").append(newSection);
+		});
 
 			$("article section .info").on("click",function (e) {
 
