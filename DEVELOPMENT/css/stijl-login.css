@@ -1,69 +1,65 @@
-.logo{
+.logo {
     width: 30px;
     height: 30px;
 }
 
-header{
+header {
     text-align: center;
     margin-top: 50px;
 }
 
-h3{
+h3 {
     font-weight: normal;
 }
-article{
-    
+
+article {
     float: left;
     width: 90%;
     padding: 5% 5% 20% 5%;
     text-align: center;
 }
-article form{
-    
+
+article form {
     float: left;
     width: 100%;
-
 }
-article form p{
-    
+
+article form p {
     float: left;
     text-align: center;
     width: 100%;
-
 }
 
-article form div{
-    
+article form div {
     float: left;
     width: 100%;
-
 }
-article form div label{
-    
+
+article form div label {
     float: left;
     text-align: center;
     width: auto;
     height: 70px;
     line-height: 70px;
     margin: 10px 0;
-
 }
 
-article form div p{
-    
+article form div p {
     float: right;
     width: auto;
     height: 70px;
 }
 
-article form .no_account{
+article form .no_account, .forgot {
     color: #EE7966;
-    text-decoration: underline;
-    margin: 10px 0;
+    text-decoration: none;
+    margin: 15px 0;
     display: block;
 }
 
-input{
+
+
+input {
     border: 2px solid #3e464c;
     border-color: #3e464c;
     border-radius: 10px;
@@ -79,11 +75,8 @@ input{
     text-decoration: none;
     background-color: #fff9eb;
 }
-input[type="checkbox"]{
 
-}
-input[type="submit"]{
-    
+input[type="submit"] {
     float: none;
     padding: 0;
     width: 100%;
@@ -102,22 +95,21 @@ input.login {
 }
 
 input[type='checkbox'] {
-    -webkit-appearance:none;
-        width:10px;
-        height:10px;
-        border: 2px solid #3e464c;
-        display: block;
-        float: left;
-
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #3e464c;
+    display: block;
+    float: left;
 }
 
 input[type='checkbox']:before {
-  content:'';
-  display:block;
-  width:10px;
-  height:10px;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
 }
 
-input[type='checkbox']:checked:before{
-  background: #EE7966;
+input[type='checkbox']:checked:before {
+    background: #EE7966;
 }
