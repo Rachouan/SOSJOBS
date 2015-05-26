@@ -58,7 +58,7 @@ $(function () {
                     $.each(achievements,function (key,val) {
 
                         var sendInfo = {
-                           achievement_id: id,
+                           achievement_id: key,
                            student_id: data.id,
                            max: val
                        };
