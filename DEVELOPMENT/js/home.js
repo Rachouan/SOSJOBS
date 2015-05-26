@@ -95,8 +95,10 @@ $(function  () {
 					                    data : sendInfo,
 					                    success:function(data, textStatus, jqXHR) 
 					                    {
-
 					            			console.log(data);
+					            			$(".achievement_container section img").attr("src",data.name+"-unlocked.svg");
+
+					            			$(".achievement_container").addClass("open");
 					                    },
 					                    error: function(jqXHR, textStatus, errorThrown) 
 					                    {
