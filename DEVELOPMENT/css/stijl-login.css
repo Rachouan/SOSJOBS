@@ -56,6 +56,13 @@ article form div p{
     height: 70px;
 }
 
+article form .no_account{
+    color: #EE7966;
+    text-decoration: underline;
+    margin: 10px 0;
+    display: block;
+}
+
 input{
     border: 2px solid #3e464c;
     border-color: #3e464c;
