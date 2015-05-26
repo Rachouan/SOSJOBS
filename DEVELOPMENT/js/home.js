@@ -96,7 +96,9 @@ $(function  () {
 					                    success:function(data, textStatus, jqXHR) 
 					                    {
 					            			console.log(data);
-					            			$(".achievement_container section img").attr("src",data.name+"-unlocked.svg");
+					            			$(".achievement_container section img").attr("src","pics/achievements/"+data.name+"-unlocked.svg");
+					            			$(".achievement_container section h1").text(data.name);
+					            			$(".achievement_container section p").text(data.description);
 
 					            			$(".achievement_container").addClass("open");
 					                    },

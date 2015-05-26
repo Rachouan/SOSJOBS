@@ -74,14 +74,13 @@ article.achievement_container section{
     border-radius: 15px;
     text-align: center;
     opacity: 0;
-
-
     
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    
 }
 article.achievement_container.open{
     display: block;

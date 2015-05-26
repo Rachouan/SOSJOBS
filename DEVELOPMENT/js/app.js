@@ -35,7 +35,7 @@ $(function () {
 
 		});
 
-		$("achievement_container .close").on("click",function  (e) {
+		$(".achievement_container .close").on("click",function  (e) {
 			e.preventDefault();
 			console.log("close");
 
