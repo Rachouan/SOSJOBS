@@ -24,10 +24,16 @@ $(function () {
                     htmlString += '<ul><li class="message"><span class="hide">message</span></li><li class="share"><span class="hide">>share</span></li><li><span>APPLY</span></li><li class="delete"><span class="hide">>delete</span></li></ul>';
                     htmlString += ' </nav> </aside>';
 
-                    var newSection = $('<section/>').html(htmlString);
+                    var newSection = $('<section/>').html(htmlString).addClass("animated fadeInUp");
 
                     $("article.feed").append(newSection);
                 });
+
+                $(".preloader").addClass("animated fadeOut");
+                                        setTimeout(function  () {
+                                                $(".preloader").removeClass("animated fadeOut");
+                                                $(".preloader").addClass("hide");
+                                        }, 1000);
             });
         } else {
             window.location.replace("login.html");

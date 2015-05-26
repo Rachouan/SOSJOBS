@@ -2,8 +2,7 @@ $(function  () {
 
 	function init () {
 
-
-
+		
 		$.ajax({
 		  url: "http://rachouanrejeb.be/sosjobs/api/vacancies/",
 		  context: document.body
@@ -22,14 +21,20 @@ $(function  () {
 			htmlString += '</a></header>';
 			htmlString += '<aside><header class="hide"><h1>vacancie options</h1></header>';
 			htmlString += '<nav><header class="hide"><h1>vacancie navigation</h1></header>';
-			htmlString += '<ul><li class="fav" id="'+val.id+'"><span class="hide">favorite</span></li><li class="share"><span class="hide">>share</span></li><li><span>APPLY</span></li><li class="delete"><span class="hide">>delete</span></li></ul>';
+			htmlString += '<ul><li class="fav" id="'+val.id+'"><span class="hide">favorite</span></li><li class="share"><span class="hide">share</span></li><li><span class="apply">APPLY</span></li><li class="delete"><span class="hide">delete</span></li></ul>';
 			htmlString += ' </nav> </aside>';
 
-			var newSection = $('<section/>').html(htmlString);
+			var newSection = $('<section/>').html(htmlString).addClass("animated fadeInUp");
 
 			$("article.feed").append(newSection);
 		});
 
+
+			$(".preloader").addClass("animated fadeOut");
+			setTimeout(function  () {
+				$(".preloader").removeClass("animated fadeOut");
+				$(".preloader").addClass("hide");
+			}, 1000);
 			$("article section .info").on("click",function (e) {
 
 				e.preventDefault();
@@ -155,6 +160,7 @@ $(function  () {
 
 			$(".fav").on("click",function (e) {
 
+				var fav = $(this);
 				$("#vacancy_id").val($(this).attr('id'));
 				$("#student_id").val(user.id);
 
@@ -169,6 +175,7 @@ $(function  () {
 	                success:function(data, textStatus, jqXHR) 
 	                {
 	                    console.log(data);
+	        			$(fav).addClass("checked");
 	                },
 	                error: function(jqXHR, textStatus, errorThrown) 
 	                {
