@@ -33,6 +33,61 @@ $(function  () {
 
 				e.preventDefault();
 
+				var sendInfo = {
+                   achievement_id: 2,
+                   student_id: 11
+               };
+
+                $.ajax(
+                {
+                    url : "http://localhost:8888/sosjobs/api/getAchievement/",
+                    type: "POST",
+                    data : sendInfo,
+                    success:function(data, textStatus, jqXHR) 
+                    {
+            			var min = parseInt(data.min);
+            			var max = parseInt(data.max);
+
+            			console.log(data.min,data.max);
+
+            			if( min < max){
+
+            				min++;
+
+            				console.log("update achievement");
+
+            				var sendInfo = {
+			                   achievement_id: 2,
+			                   student_id: 11,
+			                   min:min
+			               };
+
+	        				$.ajax(
+			                {
+			                    url : "http://localhost:8888/sosjobs/api/updateAchievement/",
+			                    type: "POST",
+			                    data : sendInfo,
+			                    success:function(data, textStatus, jqXHR) 
+			                    {
+
+			            			console.log(data);
+			                    },
+			                    error: function(jqXHR, textStatus, errorThrown) 
+			                    {
+			                        console.log(textStatus);  
+			                    }
+			                });
+
+            			}
+            			
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) 
+                    {
+                        console.log(textStatus);  
+                    }
+                });
+
+
 				console.log("clicked");
 
 				var currentId = $(this).attr("id");
