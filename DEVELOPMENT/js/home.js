@@ -34,9 +34,17 @@ $(function  () {
 
 				e.preventDefault();
 
-				var student_id = parseInt(localStorage.getItem("id"));
+				
+				var loggedIn = localStorage.getItem("loggedIn");
+				var user = JSON.parse(localStorage.getItem("user"));
+				var student_id = parseInt(user.id);
 
-				var sendInfo = {
+
+				console.log(user);
+
+				if(loggedIn){
+
+					var sendInfo = {
                    achievement_id: 2,
                    student_id: student_id
                };
@@ -58,7 +66,6 @@ $(function  () {
             				min++;
 
             				console.log("update achievement");
-            				var student_id = parseInt(localStorage.getItem("id"));
 
             				var sendInfo = {
 			                   achievement_id: data.achievement_id,
@@ -76,7 +83,6 @@ $(function  () {
 
 			            			console.log(data);
 
-	                                var student_id = parseInt(localStorage.getItem("id"));
 	                                var id = parseInt(data.student_id);
 
 	                                console.log(id,student_id);
@@ -123,6 +129,11 @@ $(function  () {
                         console.log(textStatus);  
                     }
                 });
+
+				}else{
+					window.location.replace("login.html");
+				}
+				
 
 
 				console.log("clicked");
