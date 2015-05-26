@@ -51,7 +51,7 @@ $(function  () {
 
                 $.ajax(
                 {
-                    url : "http://localhost:8888/sosjobs/api/getAchievement/",
+                    url : "http://rachouanrejeb.be/sosjobs/api/getAchievement/",
                     type: "POST",
                     data : sendInfo,
                     success:function(data, textStatus, jqXHR) 
@@ -75,7 +75,7 @@ $(function  () {
 
 	        				$.ajax(
 			                {
-			                    url : "http://localhost:8888/sosjobs/api/updateAchievement/",
+			                    url : "http://rachouanrejeb.be/sosjobs/api/updateAchievement/",
 			                    type: "POST",
 			                    data : sendInfo,
 			                    success:function(data, textStatus, jqXHR) 
@@ -96,7 +96,7 @@ $(function  () {
 
 			        				$.ajax(
 					                {
-					                    url : "http://localhost:8888/sosjobs/api/unlockAchievement/",
+					                    url : "http://rachouanrejeb.be/sosjobs/api/unlockAchievement/",
 					                    type: "POST",
 					                    data : sendInfo,
 					                    success:function(data, textStatus, jqXHR) 
