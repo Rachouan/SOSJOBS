@@ -30,6 +30,17 @@ article form {
     float: left;
     width: 100%;
 }
+article form a{
+    float: left;
+    display: block;
+    width: 50%;
+}
+article form a:first-child{
+    text-align: left;
+}
+article form a:last-child{
+    text-align: right;
+}
 
 article form p {
     float: left;
