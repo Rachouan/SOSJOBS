@@ -17,7 +17,7 @@ $(function  () {
 			$('.profile header p .locatie').text(user.town+", "+user.country);
 
 			$('.profile aside .info').text(user.about);
-			$('.profile aside nav ul li.number a').attr("href","mailto:"+user.phone);
+			$('.profile aside nav ul li.number a').attr("href","tel:"+user.phone);
 			$('.profile aside nav ul li.mail a').attr("href","mailto:"+user.email);
 
 			var url = "http://rachouanrejeb.be/sosjobs/api/achievements/" + user.id;
