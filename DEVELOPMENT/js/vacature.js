@@ -1,7 +1,5 @@
 $(function () {
 
-    var achievements = [1,1,1,1,1,5,10,1,1,1,5];
-
     function init() {
 
         geoFindMe();
@@ -16,13 +14,19 @@ $(function () {
         })
         
 
-        $("#vacature").submit(function(e) {
+        $("form#vacature").submit(function(e) {
+
+            $(".preloader").removeClass("hide");
 
             e.preventDefault();
+
+            console.log("post");
 
             var postData = $(this).serializeArray();
             var formURL = $(this).attr("action");
 
+            console.log(formURL);
+            
             $.ajax(
             {
                 url : formURL,
@@ -31,17 +35,16 @@ $(function () {
                 success:function(data, textStatus, jqXHR) 
                 {
                     console.log(data);
-                    
+                    window.location.replace("index.html");
                     
                 },
                 error: function(jqXHR, textStatus, errorThrown) 
                 {
-                    console.log(textStatus);  
+                    console.log(jqXHR);  
                 }
                 
             });
             
-            window.location.replace("index.html");
             
         });
 

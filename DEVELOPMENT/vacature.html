@@ -27,13 +27,11 @@
     <article>
         <form id="vacature" action="http://rachouanrejeb.be/sosjobs/api/insertVacancie/" method='post'>
 
-            
-
             <section class="open">
                 <header class="basic_info">
                     <h2>Basic info</h2>
                 </header>
-                
+                <input type="text" class="hide" name="creator_id" id="creator_id" value="10"/>
                 <input type="text" class="lat hide" name="latitude" id="latitude" value="0"/>
                 <input type="text" class="lng hide" name="longitude" id="longitude" value="0"/>
                 
@@ -86,5 +84,9 @@
         </ul>
     </nav>
 </footer>
+
+<article class="preloader hide ">
+            <section></section>
+        </article>
 
 </html>
