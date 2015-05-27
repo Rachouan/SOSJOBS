@@ -163,19 +163,10 @@ $(function  () {
 
 			$(".fav").on("click",function (e) {
 
-				var faved = false;
 				var fav = $(this);
 				$("#vacancy_id").val($(this).attr('id'));
 				$("#student_id").val(user.id);
 
-				var postData = $(favourite_form).serializeArray();
-	            var formURL = $(favourite_form).attr("action");
-
-	            
-				if(!faved){
-
-
-				faved = true;
 				var postData = $(favourite_form).serializeArray();
 	            var formURL = $(favourite_form).attr("action");
 
@@ -187,15 +178,13 @@ $(function  () {
 	                success:function(data, textStatus, jqXHR) 
 	                {
 	                    console.log(data);
-	        			
-        				faved = false;
+	        			$(fav).addClass("checked");
 	                },
 	                error: function(jqXHR, textStatus, errorThrown) 
 	                {
 	                    console.log(textStatus);  
 	                }
 	            });
-
 
 			});
 
