@@ -13,7 +13,7 @@ $(function () {
             }
         })
         
-        $("#company_name").on("keyup",function () {
+        $("#company").on("keyup",function () {
             $("#picture").val($(this).val()+".jpg");
         });
 
@@ -22,6 +22,7 @@ $(function () {
             e.preventDefault();
 
             var postData = $(this).serializeArray();
+            console.log(postData);
             var formURL = $(this).attr("action");
 
             $.ajax(
@@ -36,9 +37,10 @@ $(function () {
                 },
                 error: function(jqXHR, textStatus, errorThrown) 
                 {
-                    console.log(errorThrown);  
+                    console.log(jqXHR);  
                 }
             });
+            
         });
 
     }
