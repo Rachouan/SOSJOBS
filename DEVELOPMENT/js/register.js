@@ -40,6 +40,7 @@ $(function () {
         $("#register_student").submit(function(e) {
 
             e.preventDefault();
+            $(".preloader").removeClass("hide");
 
             var postData = $(this).serializeArray();
             var formURL = $(this).attr("action");
@@ -77,22 +78,29 @@ $(function () {
                             },
                             error: function(jqXHR, textStatus, errorThrown) 
                             {
-                                console.log(textStatus);  
+                                console.log(textStatus);
+
+                                $(".preloader").addClass("hide"); 
                             }
                         });
 
                     });
+
+
+                    localStorage.setItem('loggedIn',true);
+                    window.location.replace("index.html");
                     
                 },
                 error: function(jqXHR, textStatus, errorThrown) 
                 {
                     console.log(textStatus);  
+
+
+                    $(".preloader").addClass("hide");
                 }
                 
             });
             
-            localStorage.setItem('loggedIn',true);
-            window.location.replace("index.html");
             
         });
 
