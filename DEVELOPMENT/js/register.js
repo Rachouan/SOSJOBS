@@ -60,7 +60,7 @@ $(function () {
                     $.each(achievements,function (key,val) {
 
                         var sendInfo = {
-                           achievement_id: key,
+                           achievement_id: id,
                            student_id: data.id,
                            max: val
                        };
@@ -86,9 +86,7 @@ $(function () {
 
                     });
 
-
-                    localStorage.setItem('loggedIn',true);
-                    window.location.replace("index.html");
+                    $(".preloader").addClass("hide");
                     
                 },
                 error: function(jqXHR, textStatus, errorThrown) 
@@ -96,7 +94,7 @@ $(function () {
                     console.log(textStatus);  
 
 
-                    $(".preloader").addClass("hide");
+                    
                 }
                 
             });
